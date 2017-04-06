@@ -1,3 +1,14 @@
+@if ($grid-collapse-gutters) {
+  main[role="main"] {
+    @include grid-wrapper;
+  }
+
+  .grid {
+    width: calc(100% + 20px);
+  }
+}
+
+
 $grid--rtl: (
   direction: rtl,
 );

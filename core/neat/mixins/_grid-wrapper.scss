@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/// Creates a grid container with a collapsed left gutter.
+///
+/// @group features
+///
+/// @name Grid wrapper
+///
+/// @example scss
+///   .element {
+///     @include grid-wrapper;
+///   }
+///
+/// @example css
+///   .element::after {
+///     margin-left: -20px;
+///     overflow-x: hidden;
+///   }
+
+@mixin grid-wrapper($grid: $neat-grid) {  
+  $_grid-gutter: _retrieve-neat-setting($grid, gutter);
+  
+  margin-left: -$_grid-gutter;
+  overflow-x: hidden;
+}
