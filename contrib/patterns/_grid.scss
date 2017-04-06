@@ -1,9 +1,11 @@
-main[role="main"] {
-  @include grid-no-margin-wrapper;
+$grid-collapse-gutters: true !global;
+
+.grid__container--nogutter {
+  @include grid-container__nogutter;
 }
 
-.grid {
-  @include grid-no-margin-container;
+.grid__wrapper--nogutter {
+  @include grid-wrapper__nogutter;
 }
 
 $grid--rtl: (

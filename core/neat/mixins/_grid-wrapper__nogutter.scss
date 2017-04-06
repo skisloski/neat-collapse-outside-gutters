@@ -15,7 +15,7 @@
 ///     overflow-x: hidden;
 ///   }
 
-@mixin grid-no-margin-wrapper() {
+@mixin grid-wrapper__nogutter() {
   @if ($grid-collapse-gutters) {  
     overflow-x: hidden;
   }

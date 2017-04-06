@@ -16,7 +16,7 @@
 ///     width: calc(100% + (20px * 2));
 ///   }
 
-@mixin grid-no-margin-container($grid: $neat-grid) {
+@mixin grid-container__nogutter($grid: $neat-grid) {
   @if ($grid-collapse-gutters) {  
     $_grid-gutter: _retrieve-neat-setting($grid, gutter);
     
