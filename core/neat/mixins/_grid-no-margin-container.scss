@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/// Creates a grid wrapper with it's x axis overflow hidden.
+///
+/// @group features
+///
+/// @name Grid wrapper
+///
+/// @example scss
+///   .element {
+///     @include grid-no-margin-container;
+///   }
+///
+/// @example css
+///   .element {
+///     margin-left: -20px;
+///     width: calc(100% + (20px * 2));
+///   }
+
+@mixin grid-no-margin-container($grid: $neat-grid) {
+  @if ($grid-collapse-gutters) {  
+    $_grid-gutter: _retrieve-neat-setting($grid, gutter);
+    
+    margin-left: -$_grid-gutter;
+    width: calc(100% + (#{$_grid-gutter} * 2));
+  }
+}

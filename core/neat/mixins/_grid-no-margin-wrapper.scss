@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/// Creates a grid wrapper with it's x axis overflow hidden.
+///
+/// @group features
+///
+/// @name Grid wrapper
+///
+/// @example scss
+///   .element {
+///     @include grid-no-margin-wrapper;
+///   }
+///
+/// @example css
+///   .element {
+///     overflow-x: hidden;
+///   }
+
+@mixin grid-no-margin-wrapper() {
+  @if ($grid-collapse-gutters) {  
+    overflow-x: hidden;
+  }
+}
