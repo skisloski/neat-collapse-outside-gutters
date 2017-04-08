@@ -1,4 +1,11 @@
-$grid-collapse-gutters: true !global;
+// collapse the outside gutter
+$grid-collapse-gutters: false !global;
+
+// show the visual grid
+$grid-show-visual: true !global;
+
+// show the grid on gutters instead of columns
+$grid-visual-gutters: true !global;
 
 .grid__container--nogutter {
   @include grid-container__nogutter;
